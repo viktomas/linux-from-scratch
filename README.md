@@ -33,4 +33,4 @@ sudo mkswap ext3
 `
 i created filesystems.
 
-
+`debugfs -R sdaX` showed me exactly what it shoud.. I'm glad, that ubuntu's makefs didn't gave me some addition problems. After i mounted sda1 to %LFS and sda2 to %LFS/boot i used wget list for download packages and other sources.
