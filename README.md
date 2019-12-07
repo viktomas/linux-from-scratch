@@ -9,11 +9,18 @@ Day1 - Create Virtual Machine
 -----------------------------
 Time consume: 2h
 
-I created VirtualBox VM with 10GB Dunamically allocated VDI drive. Then i downloaded ubuntu server as distribution which creates partitions and builds initial system. This will i install on special 5GB virtual drive. I'll delete this drive after i will be done. I have downloaded [Ubuntu 12.04 LTS 32 bit - server](http://www.ubuntu.com/download/server/thank-you?distro=server&release=lts&bits=32).
+I created VirtualBox VM with 10GB Dunamically allocated VDI drive. Then i downloaded ubuntu server as distribution which creates partitions and builds initial system. This will i install on special 5GB virtual drive. I'll delete this drive after i will be done. I have downloaded Ubuntu 18.04.
 
-I have installed ubuntu server with all default settings.
+I have installed ubuntu desktop with all default settings.
 
-After booting system, i have installed git and i checkouted this repository. With `bash version-check.sh` i checked which required software i have and then installed the rest with `sudo apt-get install xyz`. In Ubuntu `awk` link in `usr/bin/awk` points to `mawk` so i delete it and replace it with `ln -s gawk awk`.
+After booting system, i have installed git and i checkouted this repository. With `bash version-check.sh` i checked which required software i have and then installed the rest with `sudo apt-get install xyz`.
+
+```bash
+sudo apt-get install bison
+sudo apt-get install gawk
+sudo apt-get install m4
+sudo apt-get install texinfo
+```
 
 Day2 - Preparings
 -----------------
